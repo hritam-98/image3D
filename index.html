@@ -176,11 +176,13 @@
                     <p class="mb-5">
                       Our method demonstrates superior performance across multiple benchmarks, including GSO, Omni3D, and RealFusion15. We outperform existing state-of-the-art techniques in both 2D visual metrics (PSNR, SSIM, LPIPS) and 3D geometric metrics (Chamfer Distance, F-Score).
                     </p>
-                    <img src="Assets/" alt="Quantitative Comparison Tables" class="round mb-5" />
+                    <img src="Assets/gso-table.png" alt="Quantitative Comparison Tables" class="round mb-5" />
+                    <img src="Assets/omni3d-table.png" alt="Quantitative Comparison Tables" class="round mb-5" />
+                    <img src="Assets/realfusion-table.png" alt="Quantitative Comparison Tables" class="round mb-5" />
                     <p>
                       <b>Qualitative Comparison:</b> As shown below, our generated models exhibit a higher degree of realism and fewer artifacts compared to other methods. While other approaches may produce distorted geometry or unrealistic shapes, our method maintains structural integrity and textural detail, highlighting the effectiveness of our hybrid frequency guidance.
                     </p>
-                    <img src="https://placehold.co/1000x350/e2e8f0/2c3e50?text=Qualitative+Result+Comparisons" alt="Qualitative Result Comparisons" class="round" />
+                    <img src="Assets/instamesh_comparison_crop-min.png" alt="Qualitative Result Comparisons" class="round" />
                 </div>
             </div>
         </div>
@@ -194,7 +196,7 @@
         <div class="columns is-centered">
             <div class="column is-four-fifths">
                 <div class="content is-justified">
-                    <img src="https://placehold.co/1000x300/dbeafe/2c3e50?text=Ablation+Study+Visuals" alt="Ablation Study Visuals" class="round mb-5" />
+                    <img src="Assets/ablation-iros.png" alt="Ablation Study Visuals" class="round mb-5" />
                     <p>
                       We conducted ablation studies to validate the contribution of each component. Using only the 2D high-frequency prior ($L_{SDS}^{HF}$) results in good texture but poor geometry. Conversely, using only the 3D low-frequency prior ($L_{SDS}^{LF}$) produces geometrically accurate models that lack fine detail. The combination of both, along with our reference view guidance ($L_{R}$), yields the best performance, confirming that our hybrid approach is crucial for achieving both high-fidelity visuals and consistent geometry.
                     </p>
